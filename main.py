@@ -13,7 +13,7 @@ def main():
 
     # Step 1: Search Google for registration URLs
     print("Searching Google for registration URLs...")
-    urls = search_registration_urls(max_results=10)
+    urls = search_registration_urls()
     for url in urls:
         print( url )
 
