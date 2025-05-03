@@ -3,6 +3,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from browser import get_driver, type_with_delay
 import time
+import os
+import logging
+
+logging.getLogger('selenium.webdriver').setLevel(logging.ERROR)
 
 def search_registration_urls(max_results=10):
     query = "site:*.com inurl:(signup | register)"
@@ -17,7 +21,7 @@ def search_registration_urls(max_results=10):
         time.sleep(2)
 
         urls = []
-        result_elements = driver.find_elements(By.CSS_SELECTOR, "div.g a")
+        result_elements = driver.find_elements(By.CSS_SELECTOR, "div.yuRUbf a")
         for element in result_elements[:max_results]:
             url = element.get_attribute("href")
             if url and ("signup" in url.lower() or "register" in url.lower() or "join" in url.lower()):

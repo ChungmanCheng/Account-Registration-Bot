@@ -5,16 +5,13 @@ import time
 
 def get_driver():
     options = Options()
-    options.add_argument("--headless")  # Enable headless mode
+    # options.add_argument("--headless")  # Enable headless mode
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     driver = Firefox(options=options)
     return driver
 
 def type_with_delay(element, text, delay=0.05):
-    """
-    Types the given text into the input element with a delay between each character.
-    """
     for char in text:
         element.send_keys(char)
         time.sleep(delay)
