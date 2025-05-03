@@ -1,6 +1,7 @@
 
 import argparse
 from search import search_registration_urls
+from config import load_config
 
 
 def main():
@@ -10,6 +11,8 @@ def main():
     # No explicit -h/--help; argparse provides it automatically
 
     args = parser.parse_args()
+
+    email_list, password = load_config()
 
     # Step 1: Search Google for registration URLs
     print("Searching Google for registration URLs...")
