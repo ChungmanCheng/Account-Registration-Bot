@@ -8,7 +8,7 @@ def load_config():
     """Load .env and account_registration.json configurations."""
     # Load .env
     load_dotenv()
-    emails = os.getenv("EMAIL")
+    emails = os.getenv("EMAILS")
     password = os.getenv("PASSWORD")
 
     # Parse emails into a list
