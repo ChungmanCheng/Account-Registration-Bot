@@ -1,4 +1,4 @@
-
+#!/home/erwin/venv/3.10.13/bin/python
 import argparse
 from search import search_registration_urls
 from config import load_config
