@@ -8,7 +8,7 @@ def get_driver():
     # options.add_argument("--headless")  # Enable headless mode
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--private")
+    options.add_argument("--cognition")
     driver = Firefox(options=options)
     return driver
 
