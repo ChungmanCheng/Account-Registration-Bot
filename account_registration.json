@@ -1,0 +1,16 @@
+[
+    {
+        "url": "https://account.nrf.com/passwordless-login?callbackUrl=%2FeventRegistration%2Fbigshow"
+    },
+    {
+        "prop": "verfication",
+        "url": "https://www.savills.com.vn/"
+    },
+    {
+        "prop": "verfication",
+        "url": "https://www.uniqlo.com/vn/en/account/registry"
+    },
+    {
+        "url": "https://app.memrise.com/"
+    }
+]
